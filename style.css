@@ -24,8 +24,6 @@ body {
 
 main {
     flex-grow: 1;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 #PremierProjet {
@@ -45,6 +43,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    flex: 0 0 auto;
 }
 
 .tailleImage {
@@ -75,8 +74,13 @@ h2 {
     gap: 20px;
     width: 100%;
     padding: 0px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
+#caroussel::-webkit-scrollbar {
+    display: none;
+}
 
 li {
     list-style: none;
